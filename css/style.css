@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Lora:400,400i,700,700i");
+
+*{
+  box-sizing: border-box;
+}
+body{
+  width:100%; 
+  height:100%; 
+    font-family: "Lora", serif;
+    overflow-x: hidden;
+
+}
+a{
+  text-decoration: none;
+}
+     header{
+          position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding:1.4em; 
+     }
+     header ul {
+       list-style: none;
+       display: inline-block; 
+     }
+     header ul li{
+       display: inline-block;
+       padding-right: 2.2em;  
+     }
+     header ul a{
+       text-decoration: none;
+       color: #2c3033;
+  line-height:2.3;
+       font-size: 1.2em;  
+    font-family: "Lora", serif;
+
+     }
+.land_page{
+      height: 880px;
+    position: relative;
+    background-image: url(../img/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: 41%;
+    background-position: top right;
+    padding:2em; 
+}
+.land_page:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  bottom: -50px;
+  z-index: -1;
+  background: url(../img/banner_overlay.png) bottom right no-repeat;
+  right: 17%;
+}
+
+
+
+.land_page h5 {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #ff6426;
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Lora", serif;
+    margin-bottom: 25px;
+}
+.land_page h1 {
+         font-size: 53px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.273;
+}
+p{
+      margin-bottom: 45px;
+    font-family: "Lora", serif;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #555555;
+}
+.land_page .btn_2 {
+    padding: 14px 0px 14px 25px;
+    border-left: 1px solid #2c3033;
+    position: relative;
+}
+.banner_btn_iner {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-right: 1px solid transparent;
+}
+.banner_btn{
+   margin-top:2em; 
+}
+.banner_btn_iner:after {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    border-radius: 5px;
+    z-index: -1;
+    background-color: #2c3033;
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.btn_2 {
+    display: inline-block;
+    font-size: 15px;
+    color: #1d272f;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+}
+.btn_2 img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-left: 13px;
+    margin-bottom: 5px;
+    padding-right: 15px;
+}
+.banner_btn_iner:hover {
+    border-right: 1px solid;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+  .video_popup {
+    z-index: 99;
+    color: #333848;
+    font-size: 14px;
+    margin-left: 5px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+ .video_popup span {
+    width: 44px;
+    height: 44px;
+    background-color: #fcf5ee;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 41px;
+    font-size: 14px;
+    color: #ff6426;
+    margin-left: 30px;
+    margin-right: 13px;
+    padding-left: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.banner_btn a{
+   text-decoration: none;
+   transition: 0.5s;
+}
+.banner_btn a:hover{
+   color: #fd7e14;
+}
+.meal{
+   position: relative;
+   width: 100%;
+   padding:2em; 
+}
+.container{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:20px;  
+   width:100%; 
+}
+.meal h3{
+      font-weight: 700;
+    margin-bottom: 20px;
+}
+.meal .component .first{
+  width:100%; 
+}
+.section_tittle{
+   width:100%;
+       margin-bottom: 30px; 
+}
+.section_tittle p{
+      color: #555555;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.section_tittle h2{
+  color: #2c3033;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+        font-size: 35px;
+    line-height: 40px
+}
+.section_tittle h2:after {
+    width: 90px;
+    height: 10px;
+    position: absolute;
+    content: "";
+    bottom: 9px;
+    z-index: -1;
+    left: 0;
+    background-color: #ff6426;
+}
+.meal .info{
+   padding:2em; 
+       border: 1px solid transparent;
+    box-shadow: 0px 15px 30px rgba(115, 113, 127, 0.1);
+    background-color: #fff;
+        border: 1px solid #e7e7e7;
+    border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;
+    width:100%; 
+}
+.btn_3 {
+    display: inline-block;
+    font-size: 15px;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+    color: #2c3033;
+    margin-top: 28px;
+    text-transform: capitalize;
+
+  }
+
+.good_food{
+   position: relative;
+   width: 100%;
+   display: grid;
+   grid-template-columns:repeat(2,1fr); 
+   grid-gap: 20px;
+   padding:2em; 
+}
+.good_food .about_text h5 {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 18px;
+}
+.good_food .about_text h2 {
+    line-height: 1.25;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+.good_food .about_text h4 {
+    margin-bottom: 25px;
+    color: #ff6426;
+    font-size: 20px;
+    font-weight: 300;
+}
+ .good_food .gallary img{
+     width:100%; 
+  }
+.intro_video_bg {
+    background-image: url(../img/intro_video_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.intro_video_bg .intro_video_iner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+     
+}
+.intro_video_bg h2 {
+    font-size: 60px;
+    color: #fff;
+}
+.intro_video_bg .intro_video_icon {
+    display: inline-block;
+    margin-top: 50px;
+}
+.intro_video_bg .video-play-button {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+}
+
+.intro_video_bg .video-play-button span {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    top: 6px;
+    cursor: pointer;
+}
+.intro_video_bg .ti-control-play:before {
+    content: "\e6ad";
+    font-size: 28px;
+    color: #fff;
+}
+.intro_video_bg:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: -1;
+    opacity: 0.7;
+}
+.intro_video_bg .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 200ms;
+}
+.intro_video_bg .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.menu{
+   position: relative;
+   width:100%;
+   padding: 3em; 
+}
+.menu .splite{
+   width: 100%;
+   display: grid;
+   grid-template-columns:repeat(2,1fr); 
+}
+ .splite h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.splite h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff6426;
+    margin-top: 20px;
+}
+.splite .dishes{
+   display:grid;
+   grid-template-columns:repeat(2,1fr);  
+}
+ .splite img {
+    border-right: 10px solid #f6f5f1;
+}
+
+.cheif{
+   text-align: center;
+}
+.cheif .social_icon {
+    margin-top: 35px;
+}
+.cheif .social_icon a {
+    border: 1px solid #e2e5e7;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: inline-block;
+    color: #949798;
+    line-height: 37px;
+    margin: 0px 8px;
+}
+footer{
+  width:100%;
+  height:auto;
+     background-color: #f9f8f3;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:3em;
+}
+footer ul li{
+  list-style:none;
+  font-size:1em;
+  font-family:sans;
+  cursor:pointer;
+  line-height:30px;
+  transition:0.5s;
+      color: #555555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+footer ul li p{
+  font-size:0.82em;
+}
+footer ul li a{
+  color: #48A9A6;
+}
+footer ul li:hover{
+  color:#f00;
+}
+input {
+    height: 40px;
+    border: none;
+    width: 67% ;
+    font-weight: 400;
+    background: #fff;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 13px;
+    padding: 10px 20px;
+    color: #999999;
+    border: 0px solid transparent;
+    font-family: "Lora", serif;
+    outline: none;
+}
+footer .btn {
+    margin-top: 23px;
+    background-color: #ff6426;
+    color: #fff;
+    width: 49px;
+    border-radius: 0px;
+    height: 40px;
+    outline: none;
+    border: 0;
+}
+.fa-paper-plane:before {
+    content: "\f1d8";
+    font-family: FontAwesome;
+
+}
+
+.hide{
+   display: none;
+}
+@media only screen and (min-device-width : 1000px) {
+.banner_text {
+    display: table;
+    width: 100%;
+    height: 880px;
+    padding-top: 40px;
+}
+ .banner_text_iner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner_btn_iner:before {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    top: 0px;
+    border-radius: 5px;
+    z-index: -1;
+    background-color: #2c3033;
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+ .banner_btn_iner:hover {
+  border-right: 1px solid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 154, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_banner.scss */
+ .banner_btn_iner:hover:before {
+  width: 100%;
+}
+
+/* line 157, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_banner.scss */
+ .banner_btn_iner:hover:after {
+  width: 100%;
+}
+
+/* line 160, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_banner.scss */
+ .banner_btn_iner:hover .btn_2 img {
+  padding-right: 15px;
+}
+
+/* line 163, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_banner.scss */
+ .banner_btn_iner:hover .btn_2:after {
+  right: 25px;
+  background-color: #ff6426;
+}
+.main_meal:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -250px;
+    z-index: -1;
+    background: url(../img/about_overlay.png) bottom right no-repeat;
+    background-size: 15% 65%;
+    right: 0px;
+}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 980px) {
+     header{
+      position: relative;
+      width: 100%;
+      top: 0;  
+      padding: 1em;
+      background-color:#f0eed4; 
+     }
+     header img{
+      max-width:100px; 
+     }
+     header nav ul{
+       width:100%;
+       background-color:#fff;  
+       padding:2em;
+       z-index:2;
+       display: none; 
+     }
+   
+     header ul a{
+       font-weight:bolder;
+     }
+ .land_page {
+       height: 650px;
+    background-image: none;
+    background-color: #f0eed4;
+    padding:1em; 
+}
+ .land_page:after{
+   background:none; 
+ }
+.land_page h5{
+  text-align: center;
+}  
+.land_page  h1 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    text-align: center;
+}
+.land_page p{
+ text-align: center;
+     margin-bottom: 45px;
+}
+.land_page .btn_2{
+      margin-bottom: 20px;
+          text-align: center;
+}
+.banner_btn{
+   text-align: center;
+}
+ .video_popup span {
+    margin-left: 0px;
+    text-align: center;
+}
+.good_food .about_text h2 {
+       font-size: 30px;
+    margin-bottom: 15px;
+}
+.about_text h4 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.splite {
+text-align: center;
+
+}
+.splite .dishes{
+ display: block;
+}
+.splite img{
+  border-radius:50%; 
+}
+footer{
+ display: block;
+ padding-left:0;
+}
+footer ul{
+   width:100%; 
+}
+footer p{
+ width: 70%;
+}
+footer .last{
+  width:50%; 
+}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 695px){
+  .meal .container{
+    display: block;
+  }
+  .meal .container .component{
+    margin-bottom:2em; 
+  }
+  .good_food{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .good_food .gallary img{
+     width:100%; 
+  }
+.menu .splite{
+display: block;
+
+}
+footer p{
+ width: 100%;
+}
+footer .last{
+  width:100%; 
+}
+}
+@media only screen and (min-device-width : 700px) and (max-device-width : 800px){
+  .meal .container{
+    grid-template-columns:repeat(2,1fr); 
+  }
+  .meal .container .hide{
+     display: block;
+  }
+  .meal .container .component{
+    margin-bottom:2em; 
+  }
+   .good_food{
+    grid-template-columns: 1fr 2fr;
+  }
+ 
+}
+
+@media only screen and (min-device-width : 500px) and (max-device-width : 980px){
+       header img{
+        margin:auto; 
+       }
+}
+
+@media (min-width: 992px){
+.col-6 {
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
+}
+ .banner_text {
+    height: 650px;
+}
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
